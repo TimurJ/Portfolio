@@ -89,8 +89,75 @@ h6 {
   display: grid;
   text-align: center;
   align-content: center;
-  border: 2px dashed lightcoral;
   min-height: 10em;
+}
+
+.intro-wrapper {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 5px 5px 0 0;
+  -webkit-box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3em 30em;
+  grid-template-areas: "nav-wrapper nav-wrapper" "left-column right-column";
+}
+
+.nav-wrapper {
+  grid-area: nav-wrapper;
+  border-bottom: 1px solid var(--borderColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mainColor);
+  border-radius: 5px 5px 0 0;
+}
+
+#navigation {
+  margin: 0;
+  padding: 10px;
+}
+
+#navigation li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.dots-wrapper {
+  display: flex;
+  padding: 10px;
+}
+
+#dot-1 {
+  background-color: #fc6058;
+}
+
+#dot-2 {
+  background-color: #fec02f;
+}
+
+#dot-3 {
+  background-color: #2aca3e;
+}
+
+.browser-dot {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+  -webkit-box-shadow: -1px 1px 4px -1px #000000;
+  box-shadow: -1px 1px 4px -1px #000000;
+}
+
+.left-column {
+  grid-area: left-column;
+}
+
+.right-column {
+  grid-area: right-column;
 }
 
 @media screen and (max-width: 1200px) {
