@@ -5,8 +5,8 @@
   --mainText: black;
   --secondaryText: #4b5156;
   --themeDotBorder: #24292e;
-  --previewBg: rgb(251, 249, 243, 0.8);
-  --previewShadow: #f0ead6;
+  --previewBg: rgba(255, 255, 255, 0.8);
+  --previewShadow: #eaeaea;
 }
 
 html,
@@ -42,7 +42,7 @@ a {
 }
 
 ul {
-  list-style: none;
+  list-style: circle;
 }
 
 h1 {
@@ -230,6 +230,30 @@ h6 {
   border: 2px solid #17a2b8;
   background-color: var(--previewBg);
   padding: 15px;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 100px;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--previewShadow);
+}
+
+.social-links {
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+
+#social-image {
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
