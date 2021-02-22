@@ -2,7 +2,7 @@
   --mainColor: #eaeaea;
   --secondaryColor: #fff;
   --borderColor: #c1c1c1;
-  --mainText: black;
+  --mainText: #000;
   --secondaryText: #4b5156;
   --themeDotBorder: #24292e;
   --previewBg: rgba(255, 255, 255, 0.8);
@@ -24,6 +24,7 @@ h6,
 strong {
   color: var(--mainText);
   font-family: "Russo One", sans-serif;
+  font-weight: 500;
 }
 
 p,
@@ -221,8 +222,8 @@ h6 {
   background-color: var(--previewShadow);
   width: 300px;
   height: 180px;
-  padding-left: 30px;
-  padding-top: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 #preview {
@@ -250,10 +251,48 @@ h6 {
   display: grid;
   align-content: center;
   text-align: center;
+  font-size: 18px;
+  font-weight: 530;
 }
 
 #social-image {
   width: 100%;
+}
+
+.post-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.post {
+  border: 1px solid var(--borderColor);
+  -webkit-box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.post-preview {
+  background-color: #fff;
+  padding: 14px;
+}
+
+.post-title {
+  color: #000;
+  margin: 0;
+}
+
+.post-intro {
+  color: #5f5f5f;
+  font-size: 15px;
+}
+
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1200px) {
